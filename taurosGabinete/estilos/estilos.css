@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+*{
+    padding: 0;   
+    margin: 0;
+}
+
+body{
+    background-color: #3f3f41 ;
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+figure{
+    background-color: #3f3f41;
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header{
+    background: rgb(212,203,74);
+    justify-content: center;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.navLogo{
+    border-radius: 50%;
+    border: solid;
+    height: 3em;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+h2{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+.textoInicial{
+    text-align: center;
+    color: black;
+    border: whitesmoke solid;
+    font-size: small;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+.col{
+    width: 417px;
+    height: 741px;
+    margin: auto;
+    margin-bottom: 1.5em;
+
+}
+footer{
+    padding: 1.5em;
+    background-color: rgb(212,203,74);
+    margin-top: 1.5em;
+}
+header{
+    grid-area: header;
+}
+.principal{
+    grid-area: principal;
+}
+
+.textos{
+    grid-area: textos;
+}
+
+.presentacion{
+    grid-area: presentacion;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.galeria{
+    grid-area: galeria;
+}
+
+.principal{
+    background-color: #3f3f41;
+    margin-bottom: 1.5em;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "textos"
+    "presentacion"
+    "galeria"
+    "footer";
+}
+
+.galeria{
+    background-color: #3f3f41;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 15px;
+}
+
+.promos{
+    margin-top: 15px;
+}
+.masoterapia{
+    border: 8px solid rgb(212,203,74) ;
+    height: 250px;
+    width: 300px;
+    margin-top: 15px;
+
+}
+
+
+.depilacion{
+    border: 8px solid rgb(212,203,74) ;
+    height: 250px;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.criolipolisis{
+    border: 8px solid rgb(212,203,74) ;
+    height: 250px;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.esteticaFacial{
+    border: 8px solid rgb(212,203,74) ;
+    height: 250px;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.ondasRusas{
+    border: 8px solid rgb(212,203,74) ;
+    width: 300px;
+    height: 250px; 
+    margin-top: 15px;
+}
+
+
+@media (min-width:500px){
+    .container{
+        margin: 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "textos textos"
+        "galeria galeria"
+        "galeria galeria"
+        "galeria galeria"
+        "footer footer"
+        ;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .masoterapia{
+        width: 350px;
+        height: 300px;
+    }
+    
+    .depilacion{
+        width: 350px;
+        height: 300px;
+    }
+    .criolipolisis{
+        width: 350px;
+        height: 300px;
+    }
+    .esteticaFacial{
+        width: 350px;
+        height: 300px;
+    }
+    .ondasRusas{
+        width: 350px;
+        height: 300px;
+    }
+
+    .textoInicial{
+        border:rgb(212,203,74) solid ;
+    }
+
+    .revitaliza{
+        color: rgb(212,203,74);
+    }
+
+    footer{
+        margin-top: 0;
+    }
+}
+
+@media(min-width:768px){
+    
+    .container{
+        
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "textos textos textos"
+        "galeria galeria galeria"
+        "galeria galeria galeria"
+        "footer footer"
+        ;
+    }
+    header{
+    background: rgb(212,203,74);
+    background: radial-gradient(circle, rgba(212,203,74,1) 0%, rgba(212,203,74,1) 81%, rgba(63,63,65,1) 100%, rgba(63,63,65,1) 100%);   
+    }
+    footer{
+    background: rgb(212,203,74);
+    background: radial-gradient(circle, rgba(212,203,74,1) 0%, rgba(212,203,74,1) 81%, rgba(63,63,65,1) 100%, rgba(63,63,65,1) 100%);   
+    }
+
+    h1{
+        font-size: 2.5em;
+        color: rgb(212,203,74);
+    }
+    
+    .masoterapia{
+        box-shadow: -33px -4px 60px -3px rgb(212,203,74),38px 4px 60px 0px rgb(212,203,74);
+        margin-bottom: 3em;
+        border: 3px rgb(212,203,74) solid;
+    }
+    .depilacion{
+        box-shadow: -33px -4px 60px -3px rgb(212,203,74),38px 4px 60px 0px rgb(212,203,74);
+        margin-bottom: 3em;
+        border: 3px rgb(212,203,74) solid;
+    
+    }
+    .criolipolisis{
+        box-shadow: -33px -4px 60px -3px rgb(212,203,74),38px 4px 60px 0px rgb(212,203,74);
+        margin-bottom: 3em;
+        border: 3px rgb(212,203,74) solid;
+    
+    }
+    .esteticaFacial{
+        box-shadow: -33px -4px 60px -3px rgb(212,203,74),38px 4px 60px 0px rgb(212,203,74);
+        margin-bottom: 3em;
+        border: 3px rgb(212,203,74) solid;
+        
+    }
+    .ondasRusas{
+        box-shadow: -33px -4px 60px -3px rgb(212,203,74),38px 4px 60px 0px rgb(212,203,74);
+        margin-bottom: 3em;
+        border: 3px rgb(212,203,74) solid;
+    }
+    
+}
+
+@media(min-width:1024px){
+    .masoterapia{
+        width: 475px;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .depilacion{
+                width: 475px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .criolipolisis{
+        width: 475px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .esteticaFacial{
+        width: 475px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .ondasRusas{
+        width: 475px;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .maso{
+        font-weight: bolder;
+        color: black;
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .depi{
+        font-weight: bolder;
+        color: black;
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .crio{
+        font-weight: bolder;
+        color: black;
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .este{
+        font-weight: bolder;
+        color: black;
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .ondas{
+        font-weight: bolder;
+        color: black;
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+}
